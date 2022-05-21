@@ -27,6 +27,7 @@ Partial Class Form1
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.NewLineEachDiffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,7 +51,8 @@ Partial Class Form1
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem})
+        Me.FileToolStripMenuItem.CheckOnClick = True
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.NewLineEachDiffToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "&File"
@@ -65,6 +67,14 @@ Partial Class Form1
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'NewLineEachDiffToolStripMenuItem
+        '
+        Me.NewLineEachDiffToolStripMenuItem.Checked = True
+        Me.NewLineEachDiffToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.NewLineEachDiffToolStripMenuItem.Name = "NewLineEachDiffToolStripMenuItem"
+        Me.NewLineEachDiffToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
+        Me.NewLineEachDiffToolStripMenuItem.Text = "New Line Each Diff"
         '
         'Form1
         '
@@ -87,5 +97,6 @@ Partial Class Form1
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents NewLineEachDiffToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

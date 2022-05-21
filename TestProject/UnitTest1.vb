@@ -30,4 +30,10 @@ Public Class UnitTest1
         Assert.AreEqual("<span style=""color:red"">" + ts + "</span>", u.changeString(ts))
     End Sub
 
+    <TestMethod()>
+    Public Sub TestNewDiffNewLine()
+        Dim ts As String = "[-uita sancti-]{+prologus in uitam beati+} nicolai"
+        Assert.AreEqual("<br><span style=""color:green"">[-uita sancti-]</span><span style=""color:red"">{+prologus in uitam beati+}</span><br> nicolai", u.changeString(ts, True))
+    End Sub
+
 End Class
