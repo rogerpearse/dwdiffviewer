@@ -9,7 +9,7 @@ Public Class Form1
         OpenFileDialog1.Title = "Please select a file"
         OpenFileDialog1.InitialDirectory = "C:\users\roger\Desktop"
         OpenFileDialog1.Filter = "Dwdiff Output Files|*.txt"
-        OpenFileDialog1.FileName = ""
+        OpenFileDialog1.FileName = "*.txt"
 
         If OpenFileDialog1.ShowDialog() = DialogResult.OK And OpenFileDialog1.FileName <> "" Then
             'Do things here, the path is stored in openFileDialog1.Filename
