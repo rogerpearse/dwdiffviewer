@@ -1,0 +1,8 @@
+To get rid of that annoying "linux tools (sh) not found ..." message when you push from within Visual Studio:
+
+Repair Linux Tools in Git Extensions
+Add the following.
+
+Command used to run git (git.cmd or git.exe): C:\Program Files\Git\bin\git.exe
+
+Path to linux tools (sh): C:\Program Files\Git\bin
