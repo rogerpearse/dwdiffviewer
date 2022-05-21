@@ -2,6 +2,8 @@
 Option Strict On
 Public Class Form1
 
+    Dim u As New Utils
+
     Private Sub OpenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles OpenToolStripMenuItem.Click
 
         OpenFileDialog1.Title = "Please select a file"
@@ -15,7 +17,7 @@ Public Class Form1
 
             Dim fileString As String = My.Computer.FileSystem.ReadAllText(OpenFileDialog1.FileName)
 
-            WebBrowser1.DocumentText = fileString
+            WebBrowser1.DocumentText = u.changeString(fileString)
         End If
     End Sub
 
