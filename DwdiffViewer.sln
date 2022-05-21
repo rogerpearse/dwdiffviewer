@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		DwdiffViewer.vsmdi = DwdiffViewer.vsmdi
 		Local.testsettings = Local.testsettings
 		README.md = README.md
+		Repair Linux Tools in Git Extensions.txt = Repair Linux Tools in Git Extensions.txt
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
